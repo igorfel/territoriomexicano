@@ -31,7 +31,7 @@ export function ReservationForm() {
     .join("\n");
 
   const inputClass =
-    "w-full rounded-lg border border-line bg-obsidian px-4 py-3.5 text-sand placeholder:text-sand-dim/60 focus:border-gold focus:outline-none [color-scheme:dark]";
+    "w-full rounded-lg border border-line bg-night px-4 py-3.5 text-sand placeholder:text-sand-dim/60 focus:border-copper focus:outline-none [color-scheme:dark]";
 
   return (
     <form
@@ -49,7 +49,7 @@ export function ReservationForm() {
               key={u.id}
               className={`flex cursor-pointer items-center justify-center rounded-lg border px-4 py-3.5 text-sm font-semibold transition-colors ${
                 unitId === u.id
-                  ? "border-gold bg-gold/10 text-gold"
+                  ? "border-copper bg-copper/10 text-copper"
                   : "border-line text-sand-dim hover:border-sand/40"
               }`}
             >

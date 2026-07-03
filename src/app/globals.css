@@ -1,27 +1,34 @@
 @import "tailwindcss";
 
 /*
-  Território Mexicano — Design System
-  Dark, cinematic, warm. Deep black → charcoal surfaces, sand typography,
-  terracotta/ember actions, gold details.
+  Território Mexicano — Design System v2 "Cinema"
+  México de luxo: charcoal quente, terracota queimada, cobre, âmbar,
+  chili profundo, oliva, um respiro de turquesa. Nada de preto/branco/dourado.
+  Textura em tudo: grão de filme, papel artesanal, bordas rasgadas.
 */
 
 @theme {
-  /* Palette */
-  --color-obsidian: #0c0a08;
-  --color-charcoal: #16120e;
-  --color-coal: #1f1913;
-  --color-sand: #ece1cd;
-  --color-sand-dim: #b3a488;
-  --color-terracotta: #c2593a;
-  --color-ember: #e0762e;
-  --color-gold: #c9a25e;
-  --color-agave: #6e7f5c;
-  --color-line: rgba(236, 225, 205, 0.12);
+  /* Palette — quente, texturizada, mexicana */
+  --color-night: #171210; /* charcoal quente, base */
+  --color-charcoal: #201814; /* superfícies */
+  --color-coal: #2a201a; /* superfícies elevadas */
+  --color-cream: #f2e7d0;
+  --color-sand: #dcc9a4;
+  --color-sand-dim: #a8947a;
+  --color-terracotta: #b65c38;
+  --color-ember: #cf6b31;
+  --color-copper: #c98a5e;
+  --color-amber: #e3a458;
+  --color-chili: #93301f;
+  --color-olive: #5c6142;
+  --color-agave: #7d8a55;
+  --color-turquoise: #5aa39a;
+  --color-line: rgba(220, 201, 164, 0.13);
 
   /* Typography */
   --font-display: var(--font-fraunces), "Georgia", serif;
   --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-hand: var(--font-kaushan), cursive;
 
   /* Motion */
   --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
@@ -29,6 +36,11 @@
   --animate-marquee: marquee 42s linear infinite;
   --animate-kenburns: kenburns 22s var(--ease-cinematic) forwards;
   --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+  --animate-flicker: flicker 4.2s ease-in-out infinite;
+  --animate-dust: dust 16s linear infinite;
+  --animate-ember-rise: ember-rise 7s ease-in infinite;
+  --animate-flake-fall: flake-fall 9s linear infinite;
+  --animate-smoke: smoke 8s ease-out infinite;
 
   @keyframes marquee {
     from {
@@ -57,6 +69,102 @@
       opacity: 1;
     }
   }
+
+  /* Luz de vela: brilho que respira, nunca constante */
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 0.85;
+      transform: scale(1);
+    }
+    12% {
+      opacity: 1;
+    }
+    23% {
+      opacity: 0.78;
+    }
+    36% {
+      opacity: 0.95;
+      transform: scale(1.03);
+    }
+    54% {
+      opacity: 0.82;
+    }
+    71% {
+      opacity: 1;
+      transform: scale(0.985);
+    }
+    86% {
+      opacity: 0.88;
+    }
+  }
+
+  /* Poeira suspensa na luz */
+  @keyframes dust {
+    0% {
+      transform: translate3d(0, 8vh, 0);
+      opacity: 0;
+    }
+    12% {
+      opacity: var(--p-opacity, 0.5);
+    }
+    88% {
+      opacity: var(--p-opacity, 0.5);
+    }
+    100% {
+      transform: translate3d(var(--p-drift, 2rem), -92vh, 0);
+      opacity: 0;
+    }
+  }
+
+  /* Fagulhas da brasa */
+  @keyframes ember-rise {
+    0% {
+      transform: translate3d(0, 4vh, 0) scale(1);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(var(--p-drift, -1.5rem), -70vh, 0) scale(0.2);
+      opacity: 0;
+    }
+  }
+
+  /* Flocos de chili caindo */
+  @keyframes flake-fall {
+    0% {
+      transform: translate3d(0, -6vh, 0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.9;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translate3d(var(--p-drift, 2rem), 104vh, 0)
+        rotate(var(--p-spin, 260deg));
+      opacity: 0;
+    }
+  }
+
+  /* Vapor subindo da comida */
+  @keyframes smoke {
+    0% {
+      transform: translate3d(0, 0, 0) scale(0.7);
+      opacity: 0;
+    }
+    18% {
+      opacity: var(--p-opacity, 0.16);
+    }
+    100% {
+      transform: translate3d(var(--p-drift, 1.2rem), -56vh, 0) scale(1.9);
+      opacity: 0;
+    }
+  }
 }
 
 :root {
@@ -68,31 +176,31 @@ html {
 }
 
 body {
-  background: var(--color-obsidian);
-  color: var(--color-sand);
+  background: var(--color-night);
+  color: var(--color-cream);
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Film grain over everything — the cinematic texture */
+/* Grão de filme sobre tudo */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 90;
   pointer-events: none;
-  opacity: 0.05;
+  opacity: 0.055;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
 
 ::selection {
-  background: var(--color-terracotta);
-  color: var(--color-sand);
+  background: var(--color-chili);
+  color: var(--color-cream);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--color-amber);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -114,7 +222,7 @@ body::after {
   font-weight: 600;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-copper);
 }
 
 @utility text-display {
@@ -124,7 +232,47 @@ body::after {
   letter-spacing: -0.015em;
 }
 
-/* Soft vertical fade used to blend imagery into the page */
+/* Palavras com personalidade — usar com muita parcimônia */
+@utility text-hand {
+  font-family: var(--font-hand);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Papel artesanal: fibra sutil sobre superfícies claras/cards */
+@utility bg-paper {
+  background-color: var(--color-charcoal);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.045' numOctaves='4'/%3E%3CfeColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.79 0 0 0 0 0.64 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+
+/* Azulejo Talavera — quase invisível, só textura de fundo */
+@utility bg-talavera {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%235aa39a' stroke-opacity='0.09'%3E%3Cpath d='M48 8 L58 38 L88 48 L58 58 L48 88 L38 58 L8 48 L38 38 Z'/%3E%3Ccircle cx='48' cy='48' r='11'/%3E%3Ccircle cx='0' cy='0' r='13'/%3E%3Ccircle cx='96' cy='0' r='13'/%3E%3Ccircle cx='0' cy='96' r='13'/%3E%3Ccircle cx='96' cy='96' r='13'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Faixa de sarape tecido — divisor fino */
+@utility serape {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-chili) 0 2.5rem,
+    var(--color-amber) 2.5rem 4rem,
+    var(--color-olive) 4rem 6rem,
+    var(--color-terracotta) 6rem 8.5rem,
+    var(--color-turquoise) 8.5rem 9.5rem,
+    var(--color-sand) 9.5rem 10.5rem
+  );
+  opacity: 0.85;
+}
+
+/* CTA com luz de vela: halo quente que tremula */
+@utility glow-candle {
+  position: relative;
+  box-shadow:
+    0 0 18px rgba(227, 164, 88, 0.28),
+    0 0 60px rgba(207, 107, 49, 0.22),
+    0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
 @utility mask-fade-b {
   mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
 }

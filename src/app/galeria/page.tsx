@@ -24,7 +24,7 @@ export default function GaleriaPage() {
         eyebrow="Galeria"
         title={
           <>
-            A casa, <em className="text-gold">em movimento</em>
+            A casa, <em className="text-copper">em movimento</em>
           </>
         }
         description="Um passeio pelo salão, pela cozinha aberta e pelas mesas cheias — antes mesmo de você chegar."
@@ -53,7 +53,7 @@ export default function GaleriaPage() {
               />
               <span
                 aria-hidden
-                className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-obsidian/85 to-transparent p-4 text-xs text-sand opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-night/85 to-transparent p-4 text-xs text-sand opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
               >
                 {image.alt}
               </span>
@@ -65,7 +65,7 @@ export default function GaleriaPage() {
       <ReservationBanner
         title={
           <>
-            Agora imagine <em className="text-gold">com você na foto</em>
+            Agora imagine <em className="text-copper">com você na foto</em>
           </>
         }
         subtitle="A próxima noite boa da sua semana está a uma mensagem de distância."

@@ -11,7 +11,7 @@ export function Location() {
         align="center"
         title={
           <>
-            Dois endereços, <em className="text-gold">o mesmo México</em>
+            Dois endereços, <em className="text-copper">o mesmo México</em>
           </>
         }
         description="Ponta Negra para quem vem da praia, Tirol para quem vive o centro. Escolha o seu lado da cidade."

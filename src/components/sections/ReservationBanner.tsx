@@ -8,7 +8,7 @@ import { img } from "@/lib/images";
 export function ReservationBanner({
   title = (
     <>
-      Sua mesa está <em className="text-gold">quase pronta</em>
+      Sua mesa está <em className="text-copper">quase pronta</em>
     </>
   ),
   subtitle = "Reserve em menos de um minuto pelo WhatsApp. Sem formulário longo, sem espera — a gente confirma na hora.",
@@ -28,7 +28,7 @@ export function ReservationBanner({
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/80 to-obsidian/60"
+        className="absolute inset-0 bg-gradient-to-r from-night via-night/80 to-night/60"
       />
       <div className="container-site relative py-24 text-center md:py-36">
         <Reveal>

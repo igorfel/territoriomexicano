@@ -24,7 +24,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt }: PageH
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/55 to-obsidian/35"
+        className="absolute inset-0 bg-gradient-to-t from-night via-night/55 to-night/35"
       />
       <div className="container-site relative">
         <Reveal>

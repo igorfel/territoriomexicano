@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -33,18 +34,27 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-80 transition-all duration-500",
         scrolled && !open
-          ? "border-b border-line bg-obsidian/85 backdrop-blur-md"
+          ? "border-b border-line bg-night/85 backdrop-blur-md"
           : "border-b border-transparent",
       )}
     >
       <div className="container-site flex h-20 items-center justify-between md:h-24">
         <Link
           href="/"
-          className="relative z-10 font-display text-xl tracking-tight text-sand"
+          className="relative z-10 flex items-center gap-3"
           aria-label="Território Mexicano — página inicial"
         >
-          Território{" "}
-          <span className="text-gold italic">Mexicano</span>
+          <Image
+            src="/logoterrtoriomexicano.webp"
+            alt=""
+            width={44}
+            height={44}
+            priority
+            className="h-11 w-11 rounded-full border border-cream/20 object-cover"
+          />
+          <span className="font-display text-xl tracking-tight text-sand">
+            Território <span className="text-copper italic">Mexicano</span>
+          </span>
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-8 lg:flex">
@@ -54,8 +64,8 @@ export function Navbar() {
               href={link.href}
               aria-current={pathname === link.href ? "page" : undefined}
               className={cn(
-                "text-[13px] font-medium tracking-[0.14em] uppercase transition-colors hover:text-gold",
-                pathname === link.href ? "text-gold" : "text-sand/75",
+                "text-[13px] font-medium tracking-[0.14em] uppercase transition-colors hover:text-copper",
+                pathname === link.href ? "text-copper" : "text-sand/75",
               )}
             >
               {link.label}
@@ -66,7 +76,7 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/reservas"
-            className="hidden rounded-full bg-terracotta px-6 py-2.5 text-sm font-semibold text-sand transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember sm:inline-flex"
+            className="glow-candle hidden rounded-full bg-terracotta px-6 py-2.5 text-sm font-semibold text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember sm:inline-flex"
           >
             Reservar mesa
           </Link>
@@ -92,7 +102,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35 }}
-            className="fixed inset-0 flex h-svh flex-col justify-between bg-obsidian px-6 pt-28 pb-10 lg:hidden"
+            className="fixed inset-0 flex h-svh flex-col justify-between bg-night px-6 pt-28 pb-10 lg:hidden"
           >
             <ul className="space-y-1">
               {[{ href: "/", label: "Início" }, ...NAV_LINKS].map((link, i) => (
@@ -107,7 +117,7 @@ export function Navbar() {
                     onClick={() => setOpen(false)}
                     className={cn(
                       "text-display block py-2.5 text-4xl transition-colors",
-                      pathname === link.href ? "text-gold" : "text-sand hover:text-gold",
+                      pathname === link.href ? "text-copper" : "text-sand hover:text-copper",
                     )}
                   >
                     {link.label}

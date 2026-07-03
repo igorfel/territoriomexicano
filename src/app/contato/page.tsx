@@ -52,7 +52,7 @@ export default function ContatoPage() {
         eyebrow="Contato"
         title={
           <>
-            Fala com a gente — <em className="text-gold">respondemos rápido</em>
+            Fala com a gente — <em className="text-copper">respondemos rápido</em>
           </>
         }
         description="Reserva, evento, parceria ou só saudade de taco: todos os caminhos estão aqui."
@@ -77,16 +77,16 @@ export default function ContatoPage() {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="group flex items-center gap-5 rounded-xl border border-line bg-charcoal p-6 transition-colors hover:border-gold/60"
+                    className="group flex items-center gap-5 rounded-xl border border-line bg-charcoal p-6 transition-colors hover:border-copper/60"
                   >
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-copper/40 text-copper">
                       <channel.icon aria-hidden className="h-5 w-5" />
                     </span>
                     <span>
                       <span className="block text-xs tracking-[0.2em] text-sand-dim uppercase">
                         {channel.label}
                       </span>
-                      <span className="mt-1 block font-semibold text-sand group-hover:text-gold">
+                      <span className="mt-1 block font-semibold text-sand group-hover:text-copper">
                         {channel.value}
                       </span>
                     </span>
@@ -109,19 +109,19 @@ export default function ContatoPage() {
                     href={unit.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-start gap-5 rounded-xl border border-line bg-charcoal p-6 transition-colors hover:border-gold/60"
+                    className="group flex items-start gap-5 rounded-xl border border-line bg-charcoal p-6 transition-colors hover:border-copper/60"
                   >
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-copper/40 text-copper">
                       <MapPin aria-hidden className="h-5 w-5" />
                     </span>
                     <span>
-                      <span className="block font-semibold text-sand group-hover:text-gold">
+                      <span className="block font-semibold text-sand group-hover:text-copper">
                         {unit.shortName}
                       </span>
                       <span className="mt-1 block text-sm leading-relaxed text-sand-dim">
                         {unit.address} — {unit.neighborhood}, {unit.city}
                       </span>
-                      <span className="mt-2 block text-xs font-semibold tracking-[0.18em] text-gold uppercase">
+                      <span className="mt-2 block text-xs font-semibold tracking-[0.18em] text-copper uppercase">
                         Ver no mapa →
                       </span>
                     </span>

@@ -25,7 +25,7 @@ export default function CardapioPage() {
         eyebrow="Cardápio"
         title={
           <>
-            Receitas com <em className="text-gold">passaporte carimbado</em>
+            Receitas com <em className="text-copper">passaporte carimbado</em>
           </>
         }
         description="Tudo feito na casa, todos os dias. Preços em reais, fome por sua conta."
@@ -36,17 +36,17 @@ export default function CardapioPage() {
       {/* Navegação de categorias (âncoras — zero JS) */}
       <nav
         aria-label="Categorias do cardápio"
-        className="sticky top-20 z-40 border-y border-line bg-obsidian/90 backdrop-blur-md md:top-24"
+        className="sticky top-20 z-40 border-y border-line bg-night/90 backdrop-blur-md md:top-24"
       >
         <div className="container-site flex gap-6 overflow-x-auto py-4 text-sm whitespace-nowrap">
-          <a href="#rodizio" className="font-semibold text-gold">
+          <a href="#rodizio" className="font-semibold text-copper">
             Rodízio
           </a>
           {menu.map((category) => (
             <a
               key={category.id}
               href={`#${category.id}`}
-              className="text-sand-dim transition-colors hover:text-gold"
+              className="text-sand-dim transition-colors hover:text-copper"
             >
               {category.title}
             </a>
@@ -69,16 +69,16 @@ export default function CardapioPage() {
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                 {rodizio.includes.map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-sand/90">
-                    <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
                     {item}
                   </li>
                 ))}
               </ul>
             </Reveal>
             <Reveal delay={0.15}>
-              <div className="rounded-2xl border border-gold/30 bg-obsidian p-10 text-center">
+              <div className="rounded-2xl border border-copper/30 bg-night p-10 text-center">
                 <p className="eyebrow">Por pessoa</p>
-                <p className="text-display mt-4 text-6xl text-gold">{rodizio.price}</p>
+                <p className="text-display mt-4 text-6xl text-copper">{rodizio.price}</p>
                 <p className="mt-3 text-sm text-sand-dim">{rodizio.priceNote}</p>
                 <p className="mt-1 text-xs text-sand-dim">{rodizio.kidsNote}</p>
                 <Button href="/reservas" className="mt-8 w-full">
@@ -115,7 +115,7 @@ export default function CardapioPage() {
                       aria-hidden
                       className="flex-1 border-b border-dotted border-sand/25"
                     />
-                    <p className="shrink-0 font-semibold text-gold">{item.price}</p>
+                    <p className="shrink-0 font-semibold text-copper">{item.price}</p>
                   </div>
                   <p className="mt-2 max-w-md text-sm leading-relaxed text-sand-dim">
                     {item.description}
@@ -145,7 +145,7 @@ export default function CardapioPage() {
       <ReservationBanner
         title={
           <>
-            Escolheu? <em className="text-gold">A mesa é por nossa conta</em>
+            Escolheu? <em className="text-copper">A mesa é por nossa conta</em>
           </>
         }
         subtitle="Reserve agora e chegue com o pedido pronto na cabeça — ou deixe o rodízio decidir por você."

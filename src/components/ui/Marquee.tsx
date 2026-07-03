@@ -19,7 +19,7 @@ export function Marquee({
           className="text-display flex items-center whitespace-nowrap px-6 text-2xl text-sand/35 italic md:px-10 md:text-4xl"
         >
           {item}
-          <span aria-hidden className="ml-12 text-gold/50 not-italic md:ml-20">
+          <span aria-hidden className="ml-12 text-copper/50 not-italic md:ml-20">
             ✦
           </span>
         </span>

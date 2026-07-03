@@ -186,6 +186,6 @@ export const menu: MenuCategory[] = [
 export const menuTags = {
   vegetariano: { label: "Vegetariano", color: "text-agave" },
   picante: { label: "Picante", color: "text-terracotta" },
-  casa: { label: "Assinatura da casa", color: "text-gold" },
+  casa: { label: "Assinatura da casa", color: "text-copper" },
   novo: { label: "Novo", color: "text-ember" },
 } as const;

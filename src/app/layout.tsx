@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Fraunces, Kaushan_Script, Manrope } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
@@ -21,6 +21,14 @@ const displayFont = Fraunces({
   display: "swap",
   style: ["normal", "italic"],
   weight: ["300", "400", "500", "600"],
+});
+
+/* Pincel artesanal — ecoa o lettering do logo; usar em pouquíssimas palavras */
+const handFont = Kaushan_Script({
+  variable: "--font-kaushan",
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -73,7 +81,7 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       data-scroll-behavior="smooth"
-      className={`${bodyFont.variable} ${displayFont.variable} antialiased`}
+      className={`${bodyFont.variable} ${displayFont.variable} ${handFont.variable} antialiased`}
     >
       <body className="flex min-h-svh flex-col">
         <JsonLd data={restaurantJsonLd()} />

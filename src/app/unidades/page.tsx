@@ -23,7 +23,7 @@ export default function UnidadesPage() {
         eyebrow="Unidades"
         title={
           <>
-            O México fica <em className="text-gold">mais perto do que parece</em>
+            O México fica <em className="text-copper">mais perto do que parece</em>
           </>
         }
         description="Duas casas, o mesmo cardápio completo, a mesma festa. Escolha o seu lado de Natal."
@@ -72,7 +72,7 @@ export default function UnidadesPage() {
       <ReservationBanner
         title={
           <>
-            Escolheu o lado? <em className="text-gold">Reserve o seu</em>
+            Escolheu o lado? <em className="text-copper">Reserve o seu</em>
           </>
         }
         subtitle="Ponta Negra ou Tirol — a mesa boa é a que tem você. Confirmação em minutos."

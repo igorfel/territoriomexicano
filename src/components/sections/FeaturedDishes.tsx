@@ -12,7 +12,7 @@ export function FeaturedDishes() {
           eyebrow="Do comal para a mesa"
           title={
             <>
-              As estrelas <em className="text-gold">da casa</em>
+              As estrelas <em className="text-copper">da casa</em>
             </>
           }
           description="Uma amostra do que sai da nossa cozinha aberta todos os dias. Cada receita tem origem, técnica e uma fila de fãs."

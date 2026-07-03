@@ -11,7 +11,7 @@ export function Story() {
           align="center"
           title={
             <>
-              De um food truck <em className="text-gold">a um território</em>
+              De um food truck <em className="text-copper">a um território</em>
             </>
           }
           description="Tudo começou com um trailer, uma chapa quente e a teimosia de servir o taco como ele é feito no México."
@@ -22,7 +22,7 @@ export function Story() {
             <Reveal as="li" key={entry.year} delay={i * 0.1} className="relative pl-12 md:pl-16">
               <span
                 aria-hidden
-                className="absolute top-2 left-0 h-[15px] w-[15px] rounded-full border-2 border-gold bg-charcoal"
+                className="absolute top-2 left-0 h-[15px] w-[15px] rounded-full border-2 border-copper bg-charcoal"
               />
               <p className="text-display text-sm tracking-[0.2em] text-terracotta uppercase">
                 {entry.year}

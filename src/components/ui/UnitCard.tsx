@@ -29,11 +29,11 @@ export function UnitCard({ unit, index }: { unit: Unit; index: number }) {
       </div>
       <div className="space-y-4 p-7">
         <p className="flex items-start gap-3 text-sm text-sand-dim">
-          <MapPin aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+          <MapPin aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
           {unit.address} — {unit.neighborhood}, {unit.city}
         </p>
         <p className="flex items-start gap-3 text-sm text-sand-dim">
-          <Phone aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+          <Phone aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
           {unit.phone}
         </p>
         <div className="flex flex-wrap gap-3 pt-2">
@@ -52,7 +52,7 @@ export function UnitCard({ unit, index }: { unit: Unit; index: number }) {
             href={unit.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full border border-sand/20 px-5 py-2.5 text-sm font-semibold text-sand transition-colors hover:border-gold hover:text-gold"
+            className="inline-flex items-center gap-1.5 rounded-full border border-sand/20 px-5 py-2.5 text-sm font-semibold text-sand transition-colors hover:border-copper hover:text-copper"
           >
             Como chegar
             <ArrowUpRight aria-hidden className="h-4 w-4" />

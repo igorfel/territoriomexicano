@@ -19,7 +19,7 @@ export function InstagramFeed() {
             href={site.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-sand/25 px-6 py-3 text-sm font-semibold text-sand transition-colors hover:border-gold hover:text-gold"
+            className="inline-flex items-center gap-2 rounded-full border border-sand/25 px-6 py-3 text-sm font-semibold text-sand transition-colors hover:border-copper hover:text-copper"
           >
             <InstagramIcon aria-hidden className="h-4 w-4" />
             Seguir · 110 mil
@@ -45,7 +45,7 @@ export function InstagramFeed() {
                 />
                 <span
                   aria-hidden
-                  className="absolute inset-0 flex items-center justify-center bg-obsidian/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  className="absolute inset-0 flex items-center justify-center bg-night/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 >
                   <InstagramIcon className="h-6 w-6 text-sand" />
                 </span>

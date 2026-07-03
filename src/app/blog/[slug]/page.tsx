@@ -61,7 +61,7 @@ export default async function PostPage({ params }: Props) {
             <Reveal>
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-copper hover:underline"
               >
                 <ArrowLeft aria-hidden className="h-4 w-4" />
                 Voltar ao blog
@@ -106,7 +106,7 @@ export default async function PostPage({ params }: Props) {
       <ReservationBanner
         title={
           <>
-            Deu fome? <em className="text-gold">A gente resolve</em>
+            Deu fome? <em className="text-copper">A gente resolve</em>
           </>
         }
         subtitle="Do texto à mesa em um clique: reserve pelo WhatsApp e prove tudo isso hoje."

@@ -12,10 +12,10 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "bg-terracotta text-sand hover:bg-ember focus-visible:outline-gold shadow-[0_8px_30px_rgba(194,89,58,0.25)]",
+    "bg-terracotta text-sand hover:bg-ember focus-visible:outline-copper shadow-[0_8px_30px_rgba(194,89,58,0.25)]",
   outline:
-    "border border-sand/25 text-sand hover:border-gold hover:text-gold",
-  ghost: "text-gold hover:text-ember",
+    "border border-sand/25 text-sand hover:border-copper hover:text-copper",
+  ghost: "text-copper hover:text-ember",
 };
 
 const sizes = {

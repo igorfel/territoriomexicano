@@ -52,7 +52,7 @@ export default function EventosPage() {
         eyebrow="Eventos"
         title={
           <>
-            Toda comemoração merece <em className="text-gold">pimenta</em>
+            Toda comemoração merece <em className="text-copper">pimenta</em>
           </>
         }
         description="Aniversários, confraternizações e pedidos que precisam dar certo — cuidamos da festa, você cuida do brinde."
@@ -101,7 +101,7 @@ export default function EventosPage() {
                       key={highlight}
                       className="flex items-start gap-3 text-sm text-sand/90 md:text-base"
                     >
-                      <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
                       {highlight}
                     </li>
                   ))}
@@ -129,7 +129,7 @@ export default function EventosPage() {
           eyebrow="Antes de fechar"
           title={
             <>
-              Perguntas de quem <em className="text-gold">já está planejando</em>
+              Perguntas de quem <em className="text-copper">já está planejando</em>
             </>
           }
         />

@@ -44,7 +44,7 @@ export default function ReservasPage() {
         eyebrow="Reservas"
         title={
           <>
-            A melhor mesa da noite <em className="text-gold">tem seu nome</em>
+            A melhor mesa da noite <em className="text-copper">tem seu nome</em>
           </>
         }
         description="Preencha, envie, pronto: sua reserva chega direto no WhatsApp da unidade com tudo organizado."
@@ -67,7 +67,7 @@ export default function ReservasPage() {
             <ul className="mt-10 space-y-8">
               {assurances.map((item, i) => (
                 <Reveal as="li" key={item.title} delay={i * 0.1} className="flex gap-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-copper/40 text-copper">
                     <item.icon aria-hidden className="h-5 w-5" />
                   </span>
                   <div>
@@ -86,7 +86,7 @@ export default function ReservasPage() {
                   href={`https://wa.me/${site.whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-gold hover:underline"
+                  className="font-semibold text-copper hover:underline"
                 >
                   {site.whatsappDisplay}
                 </a>{" "}

@@ -22,17 +22,17 @@ export function Hero() {
       </div>
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/45 to-obsidian/25"
+        className="absolute inset-0 bg-gradient-to-t from-night via-night/45 to-night/25"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-obsidian/55 via-transparent to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-night/55 via-transparent to-transparent"
       />
 
       <div className="container-site relative pt-40 pb-20 md:pb-28">
         <Reveal delay={0.1}>
           <p className="eyebrow flex items-center gap-3">
-            <span aria-hidden className="h-px w-10 bg-gold/70" />
+            <span aria-hidden className="h-px w-10 bg-copper/70" />
             Natal · Ponta Negra & Tirol
           </p>
         </Reveal>
@@ -41,7 +41,7 @@ export function Hero() {
           <h1 className="text-display mt-6 max-w-4xl text-[13vw] leading-[0.95] text-sand sm:text-7xl md:text-8xl">
             O México inteiro,
             <br />
-            <em className="text-gold">servido à sua mesa.</em>
+            <em className="text-copper">servido à sua mesa.</em>
           </h1>
         </Reveal>
 
@@ -67,7 +67,7 @@ export function Hero() {
         <Reveal delay={0.7}>
           <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-sand/70">
             <span className="flex items-center gap-2">
-              <span className="flex text-gold" aria-hidden>
+              <span className="flex text-copper" aria-hidden>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />
                 ))}
@@ -86,7 +86,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block"
       >
         <div className="h-12 w-7 rounded-full border border-sand/30 p-1.5">
-          <div className="h-2.5 w-full rounded-full bg-gold/80 motion-safe:animate-pulse-soft" />
+          <div className="h-2.5 w-full rounded-full bg-copper/80 motion-safe:animate-pulse-soft" />
         </div>
       </div>
     </section>

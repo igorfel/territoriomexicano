@@ -23,7 +23,7 @@ export function HappyHour() {
           <Reveal>
             <p className="eyebrow">Happy hour</p>
             <h2 className="text-display mt-5 text-4xl text-sand sm:text-5xl md:text-6xl">
-              Margaritas <em className="text-gold">em dobro</em>,
+              Margaritas <em className="text-copper">em dobro</em>,
               <br />
               terça a sexta
             </h2>
@@ -37,11 +37,11 @@ export function HappyHour() {
           <Reveal delay={0.15}>
             <div className="mt-10 space-y-4">
               <p className="flex items-center gap-3 text-sand">
-                <Clock aria-hidden className="h-5 w-5 text-gold" />
+                <Clock aria-hidden className="h-5 w-5 text-copper" />
                 Terça a sexta · 17h — 19h30
               </p>
               <p className="flex items-center gap-3 text-sand">
-                <GlassWater aria-hidden className="h-5 w-5 text-gold" />
+                <GlassWater aria-hidden className="h-5 w-5 text-copper" />
                 Margarita clássica em dobro · petiscos com preço de bar
               </p>
             </div>

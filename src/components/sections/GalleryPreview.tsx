@@ -15,7 +15,7 @@ export function GalleryPreview() {
         align="center"
         title={
           <>
-            Entre antes <em className="text-gold">de chegar</em>
+            Entre antes <em className="text-copper">de chegar</em>
           </>
         }
         description="Luz baixa, cores quentes, cozinha aberta e o barulho bom de mesa cheia. Um pedaço do México no litoral potiguar."
@@ -44,9 +44,9 @@ export function GalleryPreview() {
         <Reveal delay={0.32} className="relative">
           <Link
             href="/galeria"
-            className="flex h-full w-full flex-col items-center justify-center gap-2 rounded-lg border border-line bg-charcoal text-center transition-colors hover:border-gold"
+            className="flex h-full w-full flex-col items-center justify-center gap-2 rounded-lg border border-line bg-charcoal text-center transition-colors hover:border-copper"
           >
-            <span className="text-display text-2xl text-gold italic">+ fotos</span>
+            <span className="text-display text-2xl text-copper italic">+ fotos</span>
             <span className="text-xs tracking-[0.2em] text-sand-dim uppercase">
               Ver galeria
             </span>

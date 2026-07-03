@@ -17,7 +17,7 @@ export function About() {
             title={
               <>
                 Comida mexicana de verdade,{" "}
-                <em className="text-gold">com alma brasileira</em>
+                <em className="text-copper">com alma brasileira</em>
               </>
             }
             description="Receitas fiéis às cozinhas do México — barbacoa de 12 horas, tortillas de milho feitas todos os dias, salsas moídas na pedra — servidas com o calor e a generosidade do Nordeste. Não é fusion. É respeito pelos dois lados da fronteira."
@@ -26,7 +26,7 @@ export function About() {
             <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-display text-4xl text-gold md:text-5xl">
+                  <p className="text-display text-4xl text-copper md:text-5xl">
                     <Counter
                       value={stat.value}
                       suffix={stat.suffix}
@@ -61,7 +61,7 @@ export function About() {
           </ImageReveal>
           <ImageReveal
             delay={0.2}
-            className="absolute -bottom-10 -left-6 hidden aspect-square w-48 rounded-2xl border-4 border-obsidian md:block lg:-left-14 lg:w-64"
+            className="absolute -bottom-10 -left-6 hidden aspect-square w-48 rounded-2xl border-4 border-night md:block lg:-left-14 lg:w-64"
           >
             <Image
               src={img.guacamole}

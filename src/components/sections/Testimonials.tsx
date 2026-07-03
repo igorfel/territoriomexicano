@@ -13,7 +13,7 @@ export function Testimonials() {
         title={
           <>
             {site.rating.value} estrelas,{" "}
-            <em className="text-gold">milhares de histórias</em>
+            <em className="text-copper">milhares de histórias</em>
           </>
         }
         description="O que os clientes dizem no Google e no TripAdvisor sobre as noites que passaram aqui."
@@ -39,7 +39,7 @@ export function Testimonials() {
                 <p className="mt-0.5 text-sm text-sand-dim">{t.context}</p>
               </div>
               <p
-                className="flex text-gold"
+                className="flex text-copper"
                 aria-label={`${t.rating} de 5 estrelas`}
               >
                 {Array.from({ length: t.rating }).map((_, star) => (

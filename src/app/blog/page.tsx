@@ -31,7 +31,7 @@ export default function BlogPage() {
         eyebrow="Blog"
         title={
           <>
-            Histórias que <em className="text-gold">abrem o apetite</em>
+            Histórias que <em className="text-copper">abrem o apetite</em>
           </>
         }
         description="Receitas, cultura mexicana e os bastidores da nossa cozinha — direto do comal para a sua tela."
@@ -56,13 +56,13 @@ export default function BlogPage() {
                 <p className="mt-5 text-xs tracking-[0.2em] text-sand-dim uppercase">
                   {formatDate(post.date)} · {post.readingTime} de leitura
                 </p>
-                <h2 className="text-display mt-3 text-2xl leading-snug text-sand transition-colors group-hover:text-gold">
+                <h2 className="text-display mt-3 text-2xl leading-snug text-sand transition-colors group-hover:text-copper">
                   {post.title}
                 </h2>
                 <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-sand-dim">
                   {post.excerpt}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-copper">
                   Ler artigo
                   <ArrowRight
                     aria-hidden

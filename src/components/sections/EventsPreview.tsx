@@ -13,7 +13,7 @@ export function EventsPreview() {
           eyebrow="Celebre aqui"
           title={
             <>
-              Datas que merecem <em className="text-gold">um território</em>
+              Datas que merecem <em className="text-copper">um território</em>
             </>
           }
           description="Aniversários, confraternizações e pedidos especiais — com equipe dedicada e a festa já embutida no endereço."
@@ -24,7 +24,7 @@ export function EventsPreview() {
             <Reveal as="li" key={pack.id} delay={i * 0.12} className="group">
               <Link
                 href={`/eventos#${pack.id}`}
-                className="block overflow-hidden rounded-xl border border-line bg-obsidian transition-colors duration-300 hover:border-gold/60"
+                className="block overflow-hidden rounded-xl border border-line bg-night transition-colors duration-300 hover:border-copper/60"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
@@ -36,18 +36,18 @@ export function EventsPreview() {
                   />
                   <div
                     aria-hidden
-                    className="absolute inset-0 bg-gradient-to-t from-obsidian/70 to-transparent"
+                    className="absolute inset-0 bg-gradient-to-t from-night/70 to-transparent"
                   />
                 </div>
                 <div className="p-7">
-                  <h3 className="text-display text-2xl text-sand group-hover:text-gold">
+                  <h3 className="text-display text-2xl text-sand group-hover:text-copper">
                     {pack.title}
                   </h3>
                   <p className="mt-1 text-sm text-terracotta">{pack.subtitle}</p>
                   <p className="mt-4 line-clamp-3 text-sm leading-relaxed text-sand-dim">
                     {pack.description}
                   </p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-copper">
                     Saber mais
                     <ArrowRight
                       aria-hidden

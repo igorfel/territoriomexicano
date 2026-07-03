@@ -15,14 +15,14 @@ export function DishCard({ dish, index }: { dish: Dish; index: number }) {
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-obsidian/60 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 bg-gradient-to-t from-night/60 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
       </div>
       <div className="mt-5 flex items-baseline justify-between gap-4">
-        <h3 className="text-display text-xl text-sand transition-colors duration-300 group-hover:text-gold md:text-2xl">
+        <h3 className="text-display text-xl text-sand transition-colors duration-300 group-hover:text-copper md:text-2xl">
           {dish.name}
         </h3>
-        <p className="shrink-0 text-sm font-semibold tracking-wide text-gold">
+        <p className="shrink-0 text-sm font-semibold tracking-wide text-copper">
           {dish.price}
         </p>
       </div>

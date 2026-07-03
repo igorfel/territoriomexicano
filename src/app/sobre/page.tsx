@@ -43,7 +43,7 @@ export default function SobrePage() {
         eyebrow="Sobre nós"
         title={
           <>
-            Nascemos de <em className="text-gold">uma teimosia deliciosa</em>
+            Nascemos de <em className="text-copper">uma teimosia deliciosa</em>
           </>
         }
         description="Servir o México como ele é — e recebê-lo como o Brasil sabe receber."
@@ -67,7 +67,7 @@ export default function SobrePage() {
               eyebrow="Quem somos"
               title={
                 <>
-                  Daniel, Ana Luíza e uma <em className="text-gold">cozinha obcecada</em>
+                  Daniel, Ana Luíza e uma <em className="text-copper">cozinha obcecada</em>
                 </>
               }
               description="Em 2019, Daniel e Ana Luíza Gouvêa venderam tacos por noites seguidas em um food truck que lotava as ruas de Natal. A pergunta que os movia continua a mesma: por que o Brasil merece um México de mentira? A resposta virou restaurante em 2021 — e hoje ocupa dois endereços na cidade."
@@ -97,7 +97,7 @@ export default function SobrePage() {
           align="center"
           title={
             <>
-              Três valores, <em className="text-gold">uma mesa</em>
+              Três valores, <em className="text-copper">uma mesa</em>
             </>
           }
         />
@@ -122,7 +122,7 @@ export default function SobrePage() {
       <ReservationBanner
         title={
           <>
-            Venha escrever <em className="text-gold">o próximo capítulo</em>
+            Venha escrever <em className="text-copper">o próximo capítulo</em>
           </>
         }
         subtitle="A história fica melhor com você à mesa. Reserve pelo WhatsApp em menos de um minuto."

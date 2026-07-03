@@ -21,7 +21,7 @@ export function Experience() {
       </Parallax>
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/70 to-obsidian"
+        className="absolute inset-0 bg-gradient-to-b from-night via-night/70 to-night"
       />
 
       <div className="container-site relative">
@@ -29,7 +29,7 @@ export function Experience() {
           <Reveal>
             <p className="eyebrow">A experiência</p>
             <h2 className="text-display mt-5 text-5xl text-sand md:text-7xl">
-              Rodízio <em className="text-gold">mexicano</em>
+              Rodízio <em className="text-copper">mexicano</em>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-sand/85">
               {rodizio.description}
@@ -40,7 +40,7 @@ export function Experience() {
             <ul className="mx-auto mt-12 grid max-w-2xl gap-x-10 gap-y-4 text-left sm:grid-cols-2">
               {rodizio.includes.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sand/90">
-                  <Check aria-hidden className="mt-1 h-4 w-4 shrink-0 text-gold" />
+                  <Check aria-hidden className="mt-1 h-4 w-4 shrink-0 text-copper" />
                   <span className="text-sm leading-relaxed md:text-base">{item}</span>
                 </li>
               ))}
@@ -49,7 +49,7 @@ export function Experience() {
 
           <Reveal delay={0.3}>
             <div className="mt-14 inline-flex flex-col items-center gap-2">
-              <p className="text-display text-5xl text-gold md:text-6xl">
+              <p className="text-display text-5xl text-copper md:text-6xl">
                 {rodizio.price}
               </p>
               <p className="text-sm text-sand-dim">{rodizio.priceNote}</p>
