@@ -44,16 +44,18 @@ export function Footer() {
           <nav aria-label="Rodapé">
             <p className="eyebrow">Navegue</p>
             <ul className="mt-5 space-y-3">
-              {[...NAV_LINKS, { href: "/reservas", label: "Reservas" }].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-sand-dim transition-colors hover:text-gold"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {[...NAV_LINKS, { href: "/reservas", label: "Reservas" }].map(
+                (link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-sand-dim transition-colors hover:text-gold"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </nav>
 
@@ -70,7 +72,10 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="mt-1 flex items-start gap-1.5 text-sand-dim transition-colors hover:text-gold"
                   >
-                    <MapPin aria-hidden className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+                    <MapPin
+                      aria-hidden
+                      className="mt-0.5 h-3.5 w-3.5 shrink-0"
+                    />
                     {unit.address} — {unit.neighborhood}
                   </a>
                 </li>
@@ -105,7 +110,10 @@ export function Footer() {
             reservados.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacidade" className="transition-colors hover:text-gold">
+            <Link
+              href="/privacidade"
+              className="transition-colors hover:text-gold"
+            >
               Política de privacidade
             </Link>
             <span aria-hidden className="text-gold/60">
@@ -113,6 +121,20 @@ export function Footer() {
             </span>
           </div>
         </div>
+
+        <p className="mt-8 border-t border-line pt-6 text-center text-[11px] text-sand-dim/70">
+          Conceito desenvolvido por{" "}
+          <a
+            href="https://www.instagram.com/igorfelll/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-copper"
+          >
+            Igor Felipe
+          </a>
+          . Este projeto é um estudo independente e não representa o site
+          oficial do Território Mexicano.
+        </p>
       </div>
     </footer>
   );
