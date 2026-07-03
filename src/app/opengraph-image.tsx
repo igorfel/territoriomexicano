@@ -16,7 +16,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          background: "linear-gradient(135deg, #0c0a08 0%, #1f1913 100%)",
+          background: "linear-gradient(135deg, #171210 0%, #2a201a 100%)",
           fontFamily: "Georgia, serif",
         }}
       >
@@ -25,7 +25,7 @@ export default function OpengraphImage() {
             fontSize: 24,
             letterSpacing: 12,
             textTransform: "uppercase",
-            color: "#c9a25e",
+            color: "#c98a5e",
           }}
         >
           Natal · Ponta Negra & Tirol
@@ -34,7 +34,7 @@ export default function OpengraphImage() {
           style={{
             marginTop: 32,
             fontSize: 92,
-            color: "#ece1cd",
+            color: "#f2e7d0",
             textAlign: "center",
             lineHeight: 1.05,
           }}
@@ -45,7 +45,7 @@ export default function OpengraphImage() {
           style={{
             fontSize: 92,
             fontStyle: "italic",
-            color: "#c9a25e",
+            color: "#c98a5e",
             textAlign: "center",
             lineHeight: 1.05,
           }}
@@ -56,7 +56,7 @@ export default function OpengraphImage() {
           style={{
             marginTop: 40,
             fontSize: 28,
-            color: "#b3a488",
+            color: "#a8947a",
           }}
         >
           Rodízio · Tacos · Margaritas
@@ -68,7 +68,8 @@ export default function OpengraphImage() {
             left: 0,
             right: 0,
             height: 10,
-            background: "linear-gradient(90deg, #c2593a, #e0762e, #c9a25e)",
+            background:
+              "linear-gradient(90deg, #93301f 0 20%, #e3a458 20% 40%, #5c6142 40% 60%, #b65c38 60% 80%, #5aa39a 80% 100%)",
             display: "flex",
           }}
         />
