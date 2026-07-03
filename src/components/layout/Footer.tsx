@@ -122,6 +122,20 @@ export function Footer() {
             </span>
           </div>
         </div>
+
+        <p className="mt-8 border-t border-line pt-6 text-center text-[11px] text-sand-dim/70">
+          Conceito desenvolvido por{" "}
+          <a
+            href="https://www.instagram.com/igorfelll/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-copper"
+          >
+            Igor Felipe
+          </a>
+          . Este projeto é um estudo independente e não representa o site
+          oficial do Território Mexicano.
+        </p>
       </div>
     </footer>
   );
